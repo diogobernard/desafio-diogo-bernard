@@ -216,7 +216,7 @@ de carga](docs/carga/relatorio.md).
 O CI executa o `koverVerify` e exige 100% de linhas e ramificações no escopo medido de
 cada módulo. A cobertura do `domain` vem dos testes unitários. No `app`, o Kover agrega
 os testes unitários e de integração. A execução registrada atingiu 100% nos dois
-módulos. [Evidências de QA](tasks/prd-emissao-nota-fiscal/evidences/validacao-automatizada.md).
+módulos. [Evidências de QA](docs/execucao.md).
 
 ## Visão da solução
 
