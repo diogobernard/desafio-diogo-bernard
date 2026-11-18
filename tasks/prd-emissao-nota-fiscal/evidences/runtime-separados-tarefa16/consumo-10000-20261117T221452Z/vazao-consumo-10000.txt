@@ -1,0 +1,1 @@
+vazao_notas_por_s=500.00

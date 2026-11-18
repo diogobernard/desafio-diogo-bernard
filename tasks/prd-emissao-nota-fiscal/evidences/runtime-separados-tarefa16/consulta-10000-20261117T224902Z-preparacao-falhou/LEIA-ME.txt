@@ -1,0 +1,3 @@
+Execução B, preparação da base para consulta 10k (17/11/2026, 22:49 UTC).
+Configuração: API com 4 CPUs, pool de leitura com 25 conexões; réplica com 2 CPUs e 1 GiB.
+Resultado: o POST de preparação teve 1 falha de transporte (Connection reset by peer) em 10.000 tentativas. O Gatling registrou 9.999 OK e 1 KO. A simulação de consulta não foi iniciada; não há percentis GET para esta execução.

@@ -1,0 +1,28 @@
+# HELP notafiscal_ingresso_fila_tamanho  
+# TYPE notafiscal_ingresso_fila_tamanho gauge
+notafiscal_ingresso_fila_tamanho 0.0
+# HELP notafiscal_ingresso_lote_duracao_seconds  
+# TYPE notafiscal_ingresso_lote_duracao_seconds summary
+notafiscal_ingresso_lote_duracao_seconds{quantile="0.5"} 0.008060928
+notafiscal_ingresso_lote_duracao_seconds{quantile="0.95"} 0.07962624
+notafiscal_ingresso_lote_duracao_seconds{quantile="0.99"} 0.18448384
+notafiscal_ingresso_lote_duracao_seconds_count 1651
+notafiscal_ingresso_lote_duracao_seconds_sum 37.662988568
+# HELP notafiscal_ingresso_lote_duracao_seconds_max  
+# TYPE notafiscal_ingresso_lote_duracao_seconds_max gauge
+notafiscal_ingresso_lote_duracao_seconds_max 0.314639375
+# HELP notafiscal_ingresso_lote_tamanho  
+# TYPE notafiscal_ingresso_lote_tamanho summary
+notafiscal_ingresso_lote_tamanho_count 1651
+notafiscal_ingresso_lote_tamanho_sum 19003.0
+# HELP notafiscal_ingresso_lote_tamanho_max  
+# TYPE notafiscal_ingresso_lote_tamanho_max gauge
+notafiscal_ingresso_lote_tamanho_max 100.0
+# HELP notafiscal_ingresso_rejeitadas_total  
+# TYPE notafiscal_ingresso_rejeitadas_total counter
+notafiscal_ingresso_rejeitadas_total{motivo="encerrando"} 0.0
+notafiscal_ingresso_rejeitadas_total{motivo="espera_excedida"} 0.0
+notafiscal_ingresso_rejeitadas_total{motivo="fila_cheia"} 0.0
+# HELP notafiscal_leitura_404_falso_total  
+# TYPE notafiscal_leitura_404_falso_total counter
+notafiscal_leitura_404_falso_total 0.0

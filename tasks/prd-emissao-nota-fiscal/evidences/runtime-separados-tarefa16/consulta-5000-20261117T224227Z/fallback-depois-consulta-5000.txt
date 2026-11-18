@@ -1,0 +1,3 @@
+# HELP notafiscal_leitura_404_falso_total  
+# TYPE notafiscal_leitura_404_falso_total counter
+notafiscal_leitura_404_falso_total 0.0

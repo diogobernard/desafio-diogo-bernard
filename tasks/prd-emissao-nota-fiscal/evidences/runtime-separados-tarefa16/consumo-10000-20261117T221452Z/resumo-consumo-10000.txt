@@ -1,0 +1,5 @@
+solicitacoes=10000
+pendentes=0
+notificacoes=40000
+tempo_ate_emitir_s=20
+tempo_ate_notificar_s=60

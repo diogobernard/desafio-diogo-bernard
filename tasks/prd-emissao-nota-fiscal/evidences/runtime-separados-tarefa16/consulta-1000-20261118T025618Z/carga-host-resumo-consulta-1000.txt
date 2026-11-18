@@ -1,0 +1,3 @@
+carga_host_inicio=8.31
+carga_host_fim=8.04
+carga_host_pico=8.31

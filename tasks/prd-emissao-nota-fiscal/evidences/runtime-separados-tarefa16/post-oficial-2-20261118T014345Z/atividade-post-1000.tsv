@@ -1,0 +1,6 @@
+2026-11-18T01:43:00Z	50|0|0|0|1|19003|19003	notafiscal-carga-630-api-1|1.22%|1.33GiB / 2GiB|66.52%
+notafiscal-carga-630-postgres-1|0.07%|172.5MiB / 1GiB|16.85%
+notafiscal-carga-630-kafka-1|179.09%|653.5MiB / 1GiB|63.82%
+2026-11-18T01:43:05Z	50|0|0|0|1|20003|20003	notafiscal-carga-630-api-1|1.75%|1.331GiB / 2GiB|66.55%
+notafiscal-carga-630-postgres-1|0.34%|174MiB / 1GiB|16.99%
+notafiscal-carga-630-kafka-1|161.44%|653.3MiB / 1GiB|63.80%

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>MagicNumber:BusinessMetrics.kt:BusinessMetrics$0.5</ID>
+    <ID>MagicNumber:BusinessMetrics.kt:BusinessMetrics$0.95</ID>
+    <ID>MagicNumber:BusinessMetrics.kt:BusinessMetrics$0.99</ID>
+    <ID>MagicNumber:ConsumerSchedulerConfig.kt:ConsumerSchedulerConfig$4</ID>
+    <ID>MagicNumber:NotaFiscalProperties.kt:NotaFiscalProperties.Consulta$60</ID>
+    <ID>MagicNumber:NotaFiscalProperties.kt:NotaFiscalProperties.Consumidor$300</ID>
+    <ID>MagicNumber:NotaFiscalProperties.kt:NotaFiscalProperties.Consumidor$50</ID>
+    <ID>MagicNumber:NotaFiscalProperties.kt:NotaFiscalProperties.Outbox$24</ID>
+    <ID>MagicNumber:NotaFiscalProperties.kt:NotaFiscalProperties.Outbox$50</ID>
+    <ID>MagicNumber:NotaFiscalProperties.kt:NotaFiscalProperties.Processamento$200</ID>
+    <ID>MagicNumber:NotaFiscalProperties.kt:NotaFiscalProperties.Processamento$5</ID>
+    <ID>MaxLineLength:KafkaConfig.kt:KafkaConfig$fun</ID>
+    <ID>MaxLineLength:UseCaseConfig.kt:UseCaseConfig$fun</ID>
+    <ID>TooGenericExceptionCaught:ConsumerSimulator.kt:ConsumerSimulator$failure: Exception</ID>
+    <ID>TooGenericExceptionCaught:ConsumerSimulator.kt:ConsumerSimulator$failure: RuntimeException</ID>
+    <ID>TooGenericExceptionCaught:OutboxPublisherJob.kt:OutboxPublisherJob$failure: Exception</ID>
+  </CurrentIssues>
+</SmellBaseline>

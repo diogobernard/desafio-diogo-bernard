@@ -1,0 +1,4 @@
+preparacao=sql
+kafka=nao_iniciado
+worker=nao_iniciado
+post=nenhum

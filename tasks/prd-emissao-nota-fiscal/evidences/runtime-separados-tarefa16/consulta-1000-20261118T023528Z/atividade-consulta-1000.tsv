@@ -1,0 +1,6 @@
+2026-11-18T02:35:16Z	25|0|0|0|1|0|0	notafiscal-consulta-9724-postgres-replica-1|0.03%|74.54MiB / 1GiB|7.28%
+notafiscal-consulta-9724-api-1|2.72%|1.245GiB / 2GiB|62.27%
+notafiscal-consulta-9724-postgres-1|0.05%|150.8MiB / 1GiB|14.72%
+2026-11-18T02:35:19Z	25|0|0|0|1|0|0	notafiscal-consulta-9724-postgres-replica-1|30.29%|74.38MiB / 1GiB|7.26%
+notafiscal-consulta-9724-api-1|392.95%|1.264GiB / 2GiB|63.22%
+notafiscal-consulta-9724-postgres-1|0.04%|150.1MiB / 1GiB|14.66%

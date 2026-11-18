@@ -1,0 +1,5 @@
+solicitacoes=5000
+eventos_outbox=5000
+pausa_worker_s=10
+session_timeout_s=45
+worker_pausado_antes_medicao=sim

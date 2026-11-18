@@ -1,0 +1,104 @@
+### Emitir nota para pessoa física (202)
+POST http://localhost:8080/issuance-requests
+Content-Type: application/json
+X-Client-Id: cliente-local
+Idempotency-Key: 3f6c2a1e-8b4d-4c7a-9e21-5d0b7f9a1c01
+
+{
+  "recipient": { "person_type": "FISICA", "document": "52998224725" },
+  "items": [
+    { "code": "SKU-001", "description": "Teclado", "unit_price": 250.00, "quantity": 2 },
+    { "code": "SKU-002", "description": "Mouse", "unit_price": 99.90, "quantity": 1 }
+  ],
+  "freight_value": 30.00,
+  "addresses": [{ "purpose": "ENTREGA", "region": "SUDESTE" }]
+}
+
+### Emitir nota para pessoa jurídica (202)
+POST http://localhost:8080/issuance-requests
+Content-Type: application/json
+X-Client-Id: cliente-local
+Idempotency-Key: 3f6c2a1e-8b4d-4c7a-9e21-5d0b7f9a1c02
+
+{
+  "recipient": { "person_type": "JURIDICA", "document": "11222333000181", "tax_regime": "LUCRO_PRESUMIDO" },
+  "items": [{ "code": "SKU-100", "description": "Monitor", "unit_price": 1500.00, "quantity": 1 }],
+  "freight_value": 50.00,
+  "addresses": [
+    { "purpose": "COBRANCA", "region": "SUL" },
+    { "purpose": "ENTREGA", "region": "NORDESTE" }
+  ]
+}
+
+### Consultar solicitação (troque pelo id devolvido no POST)
+GET http://localhost:8080/issuance-requests/019a9a2e-6f3c-7b51-9d2e-4b8f0c1a2d3e
+X-Client-Id: cliente-local
+
+### Mesma chave da primeira requisição com outro pedido (422)
+POST http://localhost:8080/issuance-requests
+Content-Type: application/json
+X-Client-Id: cliente-local
+Idempotency-Key: 3f6c2a1e-8b4d-4c7a-9e21-5d0b7f9a1c01
+
+{
+  "recipient": { "person_type": "FISICA", "document": "52998224725" },
+  "items": [{ "code": "SKU-001", "description": "Teclado", "unit_price": 250.00, "quantity": 5 }],
+  "freight_value": 30.00,
+  "addresses": [{ "purpose": "ENTREGA", "region": "SUDESTE" }]
+}
+
+### Pedido sem itens (400, erro por campo em errors)
+POST http://localhost:8080/issuance-requests
+Content-Type: application/json
+X-Client-Id: cliente-local
+Idempotency-Key: 3f6c2a1e-8b4d-4c7a-9e21-5d0b7f9a1c03
+
+{
+  "recipient": { "person_type": "FISICA", "document": "52998224725" },
+  "freight_value": 10.00,
+  "addresses": [{ "purpose": "ENTREGA", "region": "SUL" }]
+}
+
+### Idempotency-Key ausente (400)
+POST http://localhost:8080/issuance-requests
+Content-Type: application/json
+X-Client-Id: cliente-local
+
+{
+  "recipient": { "person_type": "FISICA", "document": "52998224725" },
+  "items": [{ "code": "SKU-001", "description": "Teclado", "unit_price": 250.00, "quantity": 2 }],
+  "freight_value": 30.00,
+  "addresses": [{ "purpose": "ENTREGA", "region": "SUDESTE" }]
+}
+
+### JSON malformado (400)
+POST http://localhost:8080/issuance-requests
+Content-Type: application/json
+X-Client-Id: cliente-local
+Idempotency-Key: 3f6c2a1e-8b4d-4c7a-9e21-5d0b7f9a1c04
+
+{"items": [
+
+### PJ com regime OUTROS (422)
+POST http://localhost:8080/issuance-requests
+Content-Type: application/json
+X-Client-Id: cliente-local
+Idempotency-Key: 3f6c2a1e-8b4d-4c7a-9e21-5d0b7f9a1c05
+
+{
+  "recipient": { "person_type": "JURIDICA", "document": "11222333000181", "tax_regime": "OUTROS" },
+  "items": [{ "code": "SKU-100", "description": "Monitor", "unit_price": 1500.00, "quantity": 1 }],
+  "freight_value": 50.00,
+  "addresses": [{ "purpose": "ENTREGA", "region": "NORDESTE" }]
+}
+
+### Sem X-Client-Id (401)
+GET http://localhost:8080/issuance-requests/019a9a2e-6f3c-7b51-9d2e-4b8f0c1a2d3e
+
+### Solicitação de outro cliente (404, troque pelo id devolvido no POST)
+GET http://localhost:8080/issuance-requests/019a9a2e-6f3c-7b51-9d2e-4b8f0c1a2d3e
+X-Client-Id: outro-cliente
+
+### Solicitação inexistente (404)
+GET http://localhost:8080/issuance-requests/00000000-0000-0000-0000-000000000000
+X-Client-Id: cliente-local

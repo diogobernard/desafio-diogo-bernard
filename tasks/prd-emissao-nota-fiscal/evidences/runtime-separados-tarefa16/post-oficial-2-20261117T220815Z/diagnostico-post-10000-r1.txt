@@ -1,0 +1,59 @@
+resultado_gatling=1
+volume=10000
+rodada=1
+cpus_docker=8
+cpus_instancia_solicitadas=4
+cpus_instancia_efetivas=4.0
+servicos_dedicados=api
+carga_host_inicio=19.84
+carga_host_fim=23.32
+carga_host_pico=23.87
+api-1  | {"@timestamp":"2026-11-17T16:42:48.923641004Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=55.129333 usage_max_ms=480.0 acquisition_count=577 timeout_count=0","traceId":"8f796532d8c8f59591b15a30afed8a44","spanId":"88c117d3408bd898","ecs":{"version":"8.11"}}
+api-1  | {"@timestamp":"2026-11-17T16:42:48.924157045Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=0 idle=10 pending=0 max=10 acquire_max_ms=2.498916 usage_max_ms=49.0 acquisition_count=6 timeout_count=0","traceId":"8f796532d8c8f59591b15a30afed8a44","spanId":"88c117d3408bd898","ecs":{"version":"8.11"}}
+api-1  | {"@timestamp":"2026-11-17T16:42:50.929053713Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=55.129333 usage_max_ms=480.0 acquisition_count=577 timeout_count=0","traceId":"792cc0e24dd98df859ed3934763121e4","spanId":"6100be4aa9e29873","ecs":{"version":"8.11"}}
+api-1  | {"@timestamp":"2026-11-17T16:42:50.929721088Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=0 idle=10 pending=0 max=10 acquire_max_ms=2.498916 usage_max_ms=49.0 acquisition_count=6 timeout_count=0","traceId":"792cc0e24dd98df859ed3934763121e4","spanId":"6100be4aa9e29873","ecs":{"version":"8.11"}}
+api-1  | {"@timestamp":"2026-11-17T16:42:52.932105506Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=55.129333 usage_max_ms=480.0 acquisition_count=577 timeout_count=0","traceId":"2fdced333a83641e3505399c71ea9736","spanId":"788b035db000db5c","ecs":{"version":"8.11"}}
+api-1  | {"@timestamp":"2026-11-17T16:42:52.932730089Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=0 idle=10 pending=0 max=10 acquire_max_ms=2.498916 usage_max_ms=49.0 acquisition_count=6 timeout_count=0","traceId":"2fdced333a83641e3505399c71ea9736","spanId":"788b035db000db5c","ecs":{"version":"8.11"}}
+api-1  | {"@timestamp":"2026-11-17T16:43:03.360786386Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=1 idle=24 pending=0 max=25 acquire_max_ms=99.840417 usage_max_ms=714.0 acquisition_count=723 timeout_count=0","traceId":"bd9e310bcc6444ba03d3ce74ce9f2202","spanId":"5ec384553d4fb329","ecs":{"version":"8.11"}}
+api-1  | {"@timestamp":"2026-11-17T16:43:03.362426011Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=0 idle=10 pending=0 max=10 acquire_max_ms=2.498916 usage_max_ms=49.0 acquisition_count=6 timeout_count=0","traceId":"bd9e310bcc6444ba03d3ce74ce9f2202","spanId":"5ec384553d4fb329","ecs":{"version":"8.11"}}
+api-1  | {"@timestamp":"2026-11-17T16:43:06.292832304Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=1 idle=24 pending=0 max=25 acquire_max_ms=99.840417 usage_max_ms=714.0 acquisition_count=876 timeout_count=0","traceId":"05116068c6172bc39adf15a64b7f6370","spanId":"0e829c3220631dda","ecs":{"version":"8.11"}}
+api-1  | {"@timestamp":"2026-11-17T16:43:06.293021720Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=0 idle=10 pending=0 max=10 acquire_max_ms=2.498916 usage_max_ms=49.0 acquisition_count=6 timeout_count=0","traceId":"05116068c6172bc39adf15a64b7f6370","spanId":"0e829c3220631dda","ecs":{"version":"8.11"}}
+api-1  | {"@timestamp":"2026-11-17T16:43:08.299748888Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=99.840417 usage_max_ms=714.0 acquisition_count=876 timeout_count=0","traceId":"594f702e14f47a7ddf0051719c5af24e","spanId":"51f0d943cfc1b059","ecs":{"version":"8.11"}}
+api-1  | {"@timestamp":"2026-11-17T16:43:08.302057263Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=0 idle=10 pending=0 max=10 acquire_max_ms=2.498916 usage_max_ms=49.0 acquisition_count=8 timeout_count=0","traceId":"594f702e14f47a7ddf0051719c5af24e","spanId":"51f0d943cfc1b059","ecs":{"version":"8.11"}}
+api-1  | {"@timestamp":"2026-11-17T16:43:10.325319500Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=99.840417 usage_max_ms=714.0 acquisition_count=876 timeout_count=0","traceId":"4d945a82f9b77d780fd8b526675931a2","spanId":"a5127c5e619e405d","ecs":{"version":"8.11"}}
+api-1  | {"@timestamp":"2026-11-17T16:43:10.326078625Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=0 idle=10 pending=0 max=10 acquire_max_ms=2.498916 usage_max_ms=49.0 acquisition_count=8 timeout_count=0","traceId":"4d945a82f9b77d780fd8b526675931a2","spanId":"a5127c5e619e405d","ecs":{"version":"8.11"}}
+antes ListenOverflows=0 ListenDrops=0 
+depois ListenOverflows=0 ListenDrops=0 
+solicitacoes|10000
+chaves_duplicadas|0
+eventos_solicitacao|10000
+solicitacoes_sem_evento|0
+eventos_repetidos|0
+# HELP notafiscal_ingresso_fila_tamanho  
+# TYPE notafiscal_ingresso_fila_tamanho gauge
+notafiscal_ingresso_fila_tamanho 0.0
+# HELP notafiscal_ingresso_lote_duracao_seconds  
+# TYPE notafiscal_ingresso_lote_duracao_seconds summary
+notafiscal_ingresso_lote_duracao_seconds{quantile="0.5"} 0.029229056
+notafiscal_ingresso_lote_duracao_seconds{quantile="0.95"} 0.234749952
+notafiscal_ingresso_lote_duracao_seconds{quantile="0.99"} 0.738066432
+notafiscal_ingresso_lote_duracao_seconds_count 872
+notafiscal_ingresso_lote_duracao_seconds_sum 51.460102429
+# HELP notafiscal_ingresso_lote_duracao_seconds_max  
+# TYPE notafiscal_ingresso_lote_duracao_seconds_max gauge
+notafiscal_ingresso_lote_duracao_seconds_max 1.792204876
+# HELP notafiscal_ingresso_lote_tamanho  
+# TYPE notafiscal_ingresso_lote_tamanho summary
+notafiscal_ingresso_lote_tamanho_count 872
+notafiscal_ingresso_lote_tamanho_sum 19003.0
+# HELP notafiscal_ingresso_lote_tamanho_max  
+# TYPE notafiscal_ingresso_lote_tamanho_max gauge
+notafiscal_ingresso_lote_tamanho_max 100.0
+# HELP notafiscal_ingresso_rejeitadas_total  
+# TYPE notafiscal_ingresso_rejeitadas_total counter
+notafiscal_ingresso_rejeitadas_total{motivo="encerrando"} 0.0
+notafiscal_ingresso_rejeitadas_total{motivo="espera_excedida"} 0.0
+notafiscal_ingresso_rejeitadas_total{motivo="fila_cheia"} 0.0
+# HELP notafiscal_leitura_404_falso_total  
+# TYPE notafiscal_leitura_404_falso_total counter
+notafiscal_leitura_404_falso_total 0.0

@@ -1,0 +1,6 @@
+2026-11-18T03:10:17Z	25|0|0|0|1|0|0	notafiscal-consulta-14540-postgres-replica-1|0.09%|75.81MiB / 1GiB|7.40%
+notafiscal-consulta-14540-api-1|5.51%|796.5MiB / 2GiB|38.89%
+notafiscal-consulta-14540-postgres-1|0.03%|73.04MiB / 1GiB|7.13%
+2026-11-18T03:10:21Z	25|0|0|0|1|0|0	notafiscal-consulta-14540-postgres-replica-1|38.26%|75.99MiB / 1GiB|7.42%
+notafiscal-consulta-14540-api-1|508.61%|802.9MiB / 2GiB|39.20%
+notafiscal-consulta-14540-postgres-1|0.09%|73.17MiB / 1GiB|7.15%

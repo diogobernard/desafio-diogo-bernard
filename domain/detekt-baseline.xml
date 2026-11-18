@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>MagicNumber:DefaultTaxRateTable.kt:DefaultTaxRateTable$3</ID>
+    <ID>MagicNumber:Document.kt:Document$11</ID>
+    <ID>MagicNumber:Document.kt:Document$12</ID>
+    <ID>MagicNumber:Document.kt:Document$14</ID>
+    <ID>MagicNumber:Document.kt:Document$3</ID>
+    <ID>MagicNumber:Document.kt:Document$5</ID>
+    <ID>MagicNumber:Document.kt:Document$6</ID>
+    <ID>MagicNumber:Document.kt:Document$8</ID>
+    <ID>MagicNumber:Document.kt:Document$9</ID>
+    <ID>MagicNumber:DocumentValidator.kt:10</ID>
+    <ID>MagicNumber:DocumentValidator.kt:12</ID>
+    <ID>MagicNumber:DocumentValidator.kt:13</ID>
+    <ID>MagicNumber:DocumentValidator.kt:9</ID>
+    <ID>MagicNumber:InvoiceIdentifiers.kt:FiscalNumber$999_999_999</ID>
+    <ID>MagicNumber:InvoiceIdentifiers.kt:Series$999</ID>
+    <ID>MaxLineLength:RetrieveIssuanceRequestUseCaseTest.kt:RetrieveIssuanceRequestUseCaseTest$private fun policy: ConsistentReadPolicy</ID>
+    <ID>ReturnCount:ConsistentReadPolicy.kt:ConsistentReadPolicy$fun allowsFallback: Boolean</ID>
+  </CurrentIssues>
+</SmellBaseline>

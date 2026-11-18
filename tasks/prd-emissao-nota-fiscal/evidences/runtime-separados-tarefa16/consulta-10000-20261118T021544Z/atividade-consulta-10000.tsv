@@ -1,0 +1,16 @@
+2026-11-18T02:15:23Z	25|0|0|0|1|0|0	notafiscal-consulta-6968-postgres-replica-1|0.07%|149.7MiB / 1GiB|14.62%
+notafiscal-consulta-6968-api-1|1.67%|1.708GiB / 2GiB|85.39%
+notafiscal-consulta-6968-postgres-1|0.01%|227.2MiB / 1GiB|22.19%
+notafiscal-consulta-6968-kafka-1|188.54%|587.6MiB / 1GiB|57.39%
+2026-11-18T02:15:27Z	25|0|0|0|1|0|0	notafiscal-consulta-6968-postgres-replica-1|117.91%|150.5MiB / 1GiB|14.69%
+notafiscal-consulta-6968-api-1|440.54%|1.754GiB / 2GiB|87.70%
+notafiscal-consulta-6968-postgres-1|7.92%|234MiB / 1GiB|22.85%
+notafiscal-consulta-6968-kafka-1|202.81%|571.6MiB / 1GiB|55.82%
+2026-11-18T02:15:33Z	26|0|93|0|2|0|0	notafiscal-consulta-6968-postgres-replica-1|130.91%|151.1MiB / 1GiB|14.75%
+notafiscal-consulta-6968-api-1|531.70%|1.076GiB / 2GiB|53.81%
+notafiscal-consulta-6968-postgres-1|178.76%|270.6MiB / 1GiB|26.42%
+notafiscal-consulta-6968-kafka-1|54.31%|519MiB / 1GiB|50.69%
+2026-11-18T02:15:37Z	25|0|0|0|1|0|0	notafiscal-consulta-6968-postgres-replica-1|0.00%|151.5MiB / 1GiB|14.79%
+notafiscal-consulta-6968-api-1|0.50%|1.142GiB / 2GiB|57.12%
+notafiscal-consulta-6968-postgres-1|0.22%|227.5MiB / 1GiB|22.22%
+notafiscal-consulta-6968-kafka-1|217.64%|670.5MiB / 1GiB|65.48%

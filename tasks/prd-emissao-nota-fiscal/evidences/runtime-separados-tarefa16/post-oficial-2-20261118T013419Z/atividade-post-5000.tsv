@@ -1,0 +1,9 @@
+2026-11-18T01:33:40Z	50|0|0|0|1|20003|20003	notafiscal-carga-98675-api-1|1.53%|1.562GiB / 2GiB|78.09%
+notafiscal-carga-98675-postgres-1|0.77%|174.2MiB / 1GiB|17.01%
+notafiscal-carga-98675-kafka-1|48.74%|527.5MiB / 1GiB|51.51%
+2026-11-18T01:33:45Z	50|0|0|0|1|21422|21422	notafiscal-carga-98675-api-1|425.60%|1.57GiB / 2GiB|78.48%
+notafiscal-carga-98675-postgres-1|32.68%|178.8MiB / 1GiB|17.46%
+notafiscal-carga-98675-kafka-1|231.79%|612.8MiB / 1GiB|59.84%
+2026-11-18T01:33:50Z	50|0|0|0|1|24923|24923	notafiscal-carga-98675-api-1|4.00%|1.57GiB / 2GiB|78.52%
+notafiscal-carga-98675-postgres-1|0.16%|179.3MiB / 1GiB|17.51%
+notafiscal-carga-98675-kafka-1|4.32%|526.6MiB / 1GiB|51.42%

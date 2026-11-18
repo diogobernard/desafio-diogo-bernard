@@ -1,0 +1,173 @@
+spring:
+  application:
+    name: desafio-diogo-bernard
+  threads:
+    virtual:
+      enabled: true
+  flyway:
+    locations: classpath:db/migration
+    default-schema: notafiscal
+    schemas: notafiscal
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 500
+        order_inserts: true
+        order_updates: true
+  lifecycle:
+    timeout-per-shutdown-phase: 20s
+  kafka:
+    template:
+      observation-enabled: true
+    producer:
+      acks: all
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        enable.idempotence: true
+    consumer:
+      group-id: notafiscal-api
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    listener:
+      ack-mode: record
+      concurrency: 10
+      observation-enabled: true
+logging:
+  structured:
+    format:
+      console: ecs
+
+app:
+  runtime:
+    role: ${APP_RUNTIME_ROLE:combined}
+  datasource:
+    write:
+      url: ${DB_WRITE_URL:jdbc:postgresql://localhost:5432/notafiscal?currentSchema=notafiscal}
+      username: ${DB_USER:notafiscal}
+      password: ${DB_PASSWORD}
+      connection-timeout: ${APP_DB_WRITE_CONNECTION_TIMEOUT:10s}
+      hikari:
+        maximum-pool-size: ${APP_DB_WRITE_POOL_SIZE:30}
+        pool-name: ${APP_DB_WRITE_POOL_NAME:notafiscal-write}
+    read:
+      url: ${DB_READ_URL:${DB_WRITE_URL:jdbc:postgresql://localhost:5432/notafiscal?currentSchema=notafiscal}}
+      username: ${DB_READ_USER:${DB_USER:notafiscal}}
+      password: ${DB_READ_PASSWORD:${DB_PASSWORD}}
+      connection-timeout: ${APP_DB_READ_CONNECTION_TIMEOUT:30s}
+      hikari:
+        maximum-pool-size: ${APP_DB_READ_POOL_SIZE:20}
+        pool-name: ${APP_DB_READ_POOL_NAME:notafiscal-read}
+
+nota-fiscal:
+  tributacao:
+    modo: POR_FORA
+  numeracao:
+    serie-padrao: 1
+  consulta:
+    janela-leitura-consistente: 60s
+    retry-after: 1s
+    cache-ultimo-numero: 2s
+  outbox:
+    intervalo: 50ms
+    lote: 500
+    retencao: 24h
+    espera-confirmacao: 10s
+  ingresso:
+    capacidade: 1000
+    espera-maxima: 8s
+    lote-maximo: 100
+    escritores: 2
+  processamento:
+    tentativas: 5
+    backoff: 200ms
+    backoff-maximo: 5s
+  kafka:
+    replicacao: 1
+    topico-solicitacoes: notafiscal.solicitacoes.v1
+    topico-solicitacoes-dlq: notafiscal.solicitacoes.v1.dlq
+    topico-notas: notafiscal.notas.v1
+  consumidores:
+    estoque:
+      latencia-minima: 50ms
+      latencia-maxima: 300ms
+      taxa-falha: 0.0
+      tentativas: 4
+      max-em-voo: 200
+    registro:
+      latencia-minima: 50ms
+      latencia-maxima: 300ms
+      taxa-falha: 0.0
+      tentativas: 4
+      max-em-voo: 200
+    entrega:
+      latencia-minima: 50ms
+      latencia-maxima: 300ms
+      taxa-falha: 0.0
+      tentativas: 4
+      max-em-voo: 200
+    financeiro:
+      latencia-minima: 50ms
+      latencia-maxima: 300ms
+      taxa-falha: 0.0
+      tentativas: 4
+      max-em-voo: 200
+
+management:
+  otlp:
+    metrics:
+      export:
+        enabled: false
+  tracing:
+    sampling:
+      probability: ${MANAGEMENT_TRACING_SAMPLING_PROBABILITY:1.0}
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      group:
+        readiness:
+          include: readinessState,db,kafka
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+app:
+  datasource:
+    write:
+      url: ${DB_WRITE_URL:jdbc:postgresql://localhost:5432/notafiscal?currentSchema=notafiscal}
+      username: ${DB_USER:notafiscal}
+      password: ${DB_PASSWORD:teste-ficticio}
+    read:
+      url: ${DB_READ_URL:${DB_WRITE_URL:jdbc:postgresql://localhost:5432/notafiscal?currentSchema=notafiscal}}
+      username: ${DB_READ_USER:${DB_USER:notafiscal}}
+      password: ${DB_READ_PASSWORD:${DB_PASSWORD:teste-ficticio}}
+
+---
+spring:
+  config:
+    activate:
+      on-profile: observabilidade
+management:
+  opentelemetry:
+    tracing:
+      export:
+        otlp:
+          endpoint: ${OTEL_EXPORTER_OTLP_TRACES_ENDPOINT:http://localhost:4318/v1/traces}

@@ -1,0 +1,9 @@
+2026-11-18T02:56:19Z	25|0|0|0|1|0|0	notafiscal-consulta-12030-postgres-replica-1|0.03%|80.97MiB / 1GiB|7.91%
+notafiscal-consulta-12030-api-1|3.14%|878.1MiB / 2GiB|42.87%
+notafiscal-consulta-12030-postgres-1|0.06%|122.8MiB / 1GiB|11.99%
+2026-11-18T02:56:22Z	25|0|0|0|1|0|0	notafiscal-consulta-12030-postgres-replica-1|71.20%|81.44MiB / 1GiB|7.95%
+notafiscal-consulta-12030-api-1|470.23%|908.7MiB / 2GiB|44.37%
+notafiscal-consulta-12030-postgres-1|0.03%|122.7MiB / 1GiB|11.98%
+2026-11-18T02:56:27Z	25|0|0|0|1|0|0	notafiscal-consulta-12030-postgres-replica-1|0.25%|81.18MiB / 1GiB|7.93%
+notafiscal-consulta-12030-api-1|32.69%|910.5MiB / 2GiB|44.46%
+notafiscal-consulta-12030-postgres-1|0.03%|122.8MiB / 1GiB|11.99%

@@ -1,0 +1,4 @@
+cpus_docker=8
+cpus_instancia_solicitadas=4
+cpus_instancia_efetivas=4.0
+servicos_dedicados=api,worker

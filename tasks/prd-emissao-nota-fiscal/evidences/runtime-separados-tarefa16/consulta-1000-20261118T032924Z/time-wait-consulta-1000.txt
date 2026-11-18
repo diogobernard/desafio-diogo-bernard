@@ -1,0 +1,2 @@
+antes time_wait=5 limite=1000 espera_s=30
+depois time_wait=1010

@@ -1,0 +1,6 @@
+2026-11-18T03:02:22Z	25|0|0|0|1|0|0	notafiscal-consulta-13014-postgres-replica-1|0.03%|75.71MiB / 1GiB|7.39%
+notafiscal-consulta-13014-api-1|5.42%|805.6MiB / 2GiB|39.34%
+notafiscal-consulta-13014-postgres-1|0.03%|72.78MiB / 1GiB|7.11%
+2026-11-18T03:02:26Z	25|0|0|0|1|0|0	notafiscal-consulta-13014-postgres-replica-1|0.02%|75.72MiB / 1GiB|7.39%
+notafiscal-consulta-13014-api-1|115.85%|830.8MiB / 2GiB|40.57%
+notafiscal-consulta-13014-postgres-1|0.03%|72.73MiB / 1GiB|7.10%

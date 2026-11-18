@@ -1,0 +1,5 @@
+CONTAINER ID   NAME                                           CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+9a03fe05f80e   notafiscal-consulta-66523-postgres-replica-1   0.03%     75.36MiB / 1GiB     7.36%     40.4MB / 2.41MB   557kB / 89.9MB    30
+3f7eb0277d41   notafiscal-consulta-66523-api-1                1.22%     705.5MiB / 2GiB     34.45%    3.35MB / 4.9MB    38.9MB / 49.2kB   50
+7bde163b0aab   notafiscal-consulta-66523-postgres-1           0.04%     151.9MiB / 1GiB     14.84%    5.97MB / 43.3MB   87.4MB / 133MB    32
+dcca395146f5   notafiscal-consulta-66523-kafka-1              61.29%    874.6MiB / 1GiB     85.41%    2.8MB / 3.79MB    43.9MB / 3.82MB   101

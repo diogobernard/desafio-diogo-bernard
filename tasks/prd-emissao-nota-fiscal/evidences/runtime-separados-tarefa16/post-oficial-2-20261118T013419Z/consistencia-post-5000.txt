@@ -1,0 +1,5 @@
+solicitacoes|4920
+chaves_duplicadas|0
+eventos_solicitacao|4920
+solicitacoes_sem_evento|0
+eventos_repetidos|0

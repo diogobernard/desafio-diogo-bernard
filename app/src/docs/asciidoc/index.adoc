@@ -1,0 +1,63 @@
+= API de emissão de notas fiscais
+:toc: left
+:sectanchors:
+
+O envio de pedidos é assíncrono. A resposta `202` inclui o endereço para consultar o
+estado da solicitação. Os exemplos abaixo são produzidos pelos testes MVC com dados
+fictícios; mudanças incompatíveis nos payloads fazem os testes de documentação falharem.
+
+== Solicitações
+
+=== Solicitar emissão
+
+include::{snippets}/issuance-requests/criar/http-request.adoc[]
+include::{snippets}/issuance-requests/criar/request-fields.adoc[]
+include::{snippets}/issuance-requests/criar/http-response.adoc[]
+include::{snippets}/issuance-requests/criar/response-headers.adoc[]
+include::{snippets}/issuance-requests/criar/response-fields.adoc[]
+
+=== Cliente ausente
+
+include::{snippets}/issuance-requests/criar-cliente-ausente/http-response.adoc[]
+include::{snippets}/issuance-requests/criar-cliente-ausente/request-headers.adoc[]
+include::{snippets}/issuance-requests/criar-cliente-ausente/request-fields.adoc[]
+include::{snippets}/issuance-requests/criar-cliente-ausente/response-fields.adoc[]
+
+=== Capacidade esgotada
+
+Cada instância da API limita as solicitações de emissão em processamento simultâneo
+(`nota-fiscal.ingresso.max-simultaneas`). Quando nenhuma vaga é liberada dentro de
+`nota-fiscal.ingresso.espera-maxima`, a API responde `503` com `Retry-After` e não
+persiste nada. É uma sobrecarga operacional, e não uma regra de negócio: o cliente pode
+repetir o pedido com a mesma `Idempotency-Key`, sem risco de duplicidade.
+
+include::{snippets}/issuance-requests/criar-capacidade-esgotada/http-response.adoc[]
+include::{snippets}/issuance-requests/criar-capacidade-esgotada/response-headers.adoc[]
+include::{snippets}/issuance-requests/criar-capacidade-esgotada/response-fields.adoc[]
+
+=== Consultar solicitação
+
+include::{snippets}/issuance-requests/consultar/http-request.adoc[]
+include::{snippets}/issuance-requests/consultar/path-parameters.adoc[]
+include::{snippets}/issuance-requests/consultar/http-response.adoc[]
+include::{snippets}/issuance-requests/consultar/response-fields.adoc[]
+
+== Notas fiscais
+
+=== Consultar nota fiscal
+
+Uma consulta pode ser condicional. Se o `ETag` enviado em `If-None-Match` ainda
+corresponder à nota, a API responde `304` sem corpo.
+
+include::{snippets}/invoices/consultar/http-request.adoc[]
+include::{snippets}/invoices/consultar/path-parameters.adoc[]
+include::{snippets}/invoices/consultar/query-parameters.adoc[]
+include::{snippets}/invoices/consultar/request-headers.adoc[]
+include::{snippets}/invoices/consultar/response-headers.adoc[]
+include::{snippets}/invoices/consultar/http-response.adoc[]
+include::{snippets}/invoices/consultar/response-fields.adoc[]
+
+=== Cliente ausente
+
+include::{snippets}/invoices/consultar-cliente-ausente/http-response.adoc[]
+include::{snippets}/invoices/consultar-cliente-ausente/response-fields.adoc[]

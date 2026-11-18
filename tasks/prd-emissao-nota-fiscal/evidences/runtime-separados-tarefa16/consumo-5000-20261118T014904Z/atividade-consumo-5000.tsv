@@ -1,0 +1,28 @@
+2026-11-18T01:48:22Z	65|1|45|45|4|5000|5000	notafiscal-consumo-2563-worker-1|190.22%|814.1MiB / 2GiB|39.75%
+notafiscal-consumo-2563-api-1|1.42%|1.182GiB / 2GiB|59.09%
+notafiscal-consumo-2563-postgres-1|71.62%|215.9MiB / 1GiB|21.08%
+notafiscal-consumo-2563-kafka-1|191.44%|571.9MiB / 1GiB|55.85%
+2026-11-18T01:48:26Z	65|0|5|0|6|77|2251	notafiscal-consumo-2563-worker-1|155.21%|813.5MiB / 2GiB|39.72%
+notafiscal-consumo-2563-api-1|1.92%|1.175GiB / 2GiB|58.73%
+notafiscal-consumo-2563-postgres-1|95.95%|227.6MiB / 1GiB|22.22%
+notafiscal-consumo-2563-kafka-1|129.12%|490.2MiB / 1GiB|47.87%
+2026-11-18T01:48:31Z	66|0|125|0|2|0|0	notafiscal-consumo-2563-worker-1|82.07%|813.5MiB / 2GiB|39.72%
+notafiscal-consumo-2563-api-1|9.51%|1.165GiB / 2GiB|58.25%
+notafiscal-consumo-2563-postgres-1|160.04%|234.9MiB / 1GiB|22.94%
+notafiscal-consumo-2563-kafka-1|165.61%|610.3MiB / 1GiB|59.60%
+2026-11-18T01:48:35Z	66|0|4473|0|2|0|0	notafiscal-consumo-2563-worker-1|16.35%|813.5MiB / 2GiB|39.72%
+notafiscal-consumo-2563-api-1|1.00%|1.165GiB / 2GiB|58.25%
+notafiscal-consumo-2563-postgres-1|99.79%|235.6MiB / 1GiB|23.00%
+notafiscal-consumo-2563-kafka-1|103.71%|507.3MiB / 1GiB|49.54%
+2026-11-18T01:48:39Z	66|0|8733|0|2|0|0	notafiscal-consumo-2563-worker-1|36.10%|813.8MiB / 2GiB|39.74%
+notafiscal-consumo-2563-api-1|1.02%|1.17GiB / 2GiB|58.51%
+notafiscal-consumo-2563-postgres-1|62.95%|235.9MiB / 1GiB|23.04%
+notafiscal-consumo-2563-kafka-1|149.88%|607.2MiB / 1GiB|59.30%
+2026-11-18T01:48:43Z	66|0|2752|0|2|0|0	notafiscal-consumo-2563-worker-1|4.11%|813.6MiB / 2GiB|39.73%
+notafiscal-consumo-2563-api-1|0.68%|1.165GiB / 2GiB|58.26%
+notafiscal-consumo-2563-postgres-1|103.09%|235.5MiB / 1GiB|22.99%
+notafiscal-consumo-2563-kafka-1|2.93%|488.4MiB / 1GiB|47.70%
+2026-11-18T01:48:48Z	66|0|6801|0|2|0|0	notafiscal-consumo-2563-worker-1|7.92%|813.6MiB / 2GiB|39.73%
+notafiscal-consumo-2563-api-1|0.55%|1.165GiB / 2GiB|58.26%
+notafiscal-consumo-2563-postgres-1|9.28%|231.9MiB / 1GiB|22.65%
+notafiscal-consumo-2563-kafka-1|3.52%|503.4MiB / 1GiB|49.16%

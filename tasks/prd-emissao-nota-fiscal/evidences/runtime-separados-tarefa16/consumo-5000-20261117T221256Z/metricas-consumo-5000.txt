@@ -1,0 +1,20 @@
+# HELP notafiscal_emissao_duracao_seconds  
+# TYPE notafiscal_emissao_duracao_seconds summary
+notafiscal_emissao_duracao_seconds{modo="POR_FORA",serie="1",quantile="0.5"} 9.39524096
+notafiscal_emissao_duracao_seconds{modo="POR_FORA",serie="1",quantile="0.95"} 11.005853696
+notafiscal_emissao_duracao_seconds{modo="POR_FORA",serie="1",quantile="0.99"} 11.542724608
+notafiscal_emissao_duracao_seconds_count{modo="POR_FORA",serie="1"} 12003
+notafiscal_emissao_duracao_seconds_sum{modo="POR_FORA",serie="1"} 102523.345117119
+# HELP notafiscal_emissao_duracao_seconds_max  
+# TYPE notafiscal_emissao_duracao_seconds_max gauge
+notafiscal_emissao_duracao_seconds_max{modo="POR_FORA",serie="1"} 13.026455505
+# HELP notafiscal_numeracao_espera_lock_seconds  
+# TYPE notafiscal_numeracao_espera_lock_seconds summary
+notafiscal_numeracao_espera_lock_seconds{serie="1",quantile="0.5"} 0.002879488
+notafiscal_numeracao_espera_lock_seconds{serie="1",quantile="0.95"} 0.011005952
+notafiscal_numeracao_espera_lock_seconds{serie="1",quantile="0.99"} 0.026210304
+notafiscal_numeracao_espera_lock_seconds_count{serie="1"} 12003
+notafiscal_numeracao_espera_lock_seconds_sum{serie="1"} 65.313410915
+# HELP notafiscal_numeracao_espera_lock_seconds_max  
+# TYPE notafiscal_numeracao_espera_lock_seconds_max gauge
+notafiscal_numeracao_espera_lock_seconds_max{serie="1"} 0.342364708

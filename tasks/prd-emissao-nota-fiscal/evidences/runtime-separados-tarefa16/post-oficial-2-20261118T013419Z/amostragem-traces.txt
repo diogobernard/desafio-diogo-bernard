@@ -1,0 +1,1 @@
+amostragem_traces=0.1

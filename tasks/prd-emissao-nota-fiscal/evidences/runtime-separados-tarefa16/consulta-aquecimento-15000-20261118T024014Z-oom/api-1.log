@@ -1,0 +1,248 @@
+Picked up JAVA_TOOL_OPTIONS: -Xlog:gc*,safepoint:file=/gc/api-%p.log:time,uptime,level,tags:filecount=2,filesize=64m
+{"@timestamp":"2026-11-18T02:39:32.159233962Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.ApplicationKt"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Starting ApplicationKt using Java 21.0.13 with PID 1 (/app/app.jar started by root in /app)","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:32.166271046Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.ApplicationKt"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"The following 1 profile is active: \"local\"","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:32.962294504Z","log":{"level":"INFO","logger":"org.springframework.data.repository.config.RepositoryConfigurationDelegate"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode.","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:33.008487004Z","log":{"level":"INFO","logger":"org.springframework.data.repository.config.RepositoryConfigurationDelegate"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Finished Spring Data repository scanning in 40 ms. Found 7 JPA repository interfaces.","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:33.464158921Z","log":{"level":"INFO","logger":"org.springframework.boot.tomcat.TomcatWebServer"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Tomcat initialized with port 8080 (http)","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:33.475521671Z","log":{"level":"INFO","logger":"org.apache.catalina.core.StandardService"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Starting service [Tomcat]","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:33.475820421Z","log":{"level":"INFO","logger":"org.apache.catalina.core.StandardEngine"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Starting Servlet engine: [Apache Tomcat/11.0.27]","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:33.495196338Z","log":{"level":"INFO","logger":"org.springframework.boot.web.context.servlet.WebApplicationContextInitializer"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Root WebApplicationContext: initialization completed in 1275 ms","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:33.886171463Z","log":{"level":"INFO","logger":"com.zaxxer.hikari.HikariDataSource"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"notafiscal-api-write - Starting...","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.017104838Z","log":{"level":"INFO","logger":"com.zaxxer.hikari.pool.HikariPool"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"notafiscal-api-write - Added connection org.postgresql.jdbc.PgConnection@4407fea2","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.018265755Z","log":{"level":"INFO","logger":"com.zaxxer.hikari.HikariDataSource"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"notafiscal-api-write - Start completed.","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.036665755Z","log":{"level":"INFO","logger":"org.flywaydb.core.FlywayExecutor"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Database: jdbc:postgresql://postgres:5432/notafiscal?currentSchema=notafiscal (PostgreSQL 17.6)","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.070313213Z","log":{"level":"INFO","logger":"org.flywaydb.core.internal.database.base.Schema"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Creating schema \"notafiscal\" ...","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.073796547Z","log":{"level":"INFO","logger":"org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Creating Schema History table \"notafiscal\".\"flyway_schema_history\" ...","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.138543297Z","log":{"level":"INFO","logger":"org.flywaydb.core.internal.command.DbMigrate"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Current version of schema \"notafiscal\": null","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.145659713Z","log":{"level":"INFO","logger":"org.flywaydb.core.internal.command.DbMigrate"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Migrating schema \"notafiscal\" to version \"1 - esquema inicial\"","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.149109547Z","log":{"level":"WARN","logger":"org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"DB: schema \"notafiscal\" already exists, skipping (SQL State: 42P06 - Error Code: 0)","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.163821588Z","log":{"level":"INFO","logger":"org.flywaydb.core.internal.command.DbMigrate"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Migrating schema \"notafiscal\" to version \"2 - outbox sequence\"","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.172670797Z","log":{"level":"INFO","logger":"org.flywaydb.core.internal.command.DbMigrate"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Migrating schema \"notafiscal\" to version \"3 - outbox pendente por topico\"","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.179149463Z","log":{"level":"INFO","logger":"org.flywaydb.core.internal.command.DbMigrate"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Migrating schema \"notafiscal\" to version \"4 - nota fiscal sem conteudo jsonb\"","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.189450588Z","log":{"level":"INFO","logger":"org.flywaydb.core.internal.command.DbMigrate"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Successfully applied 4 migrations to schema \"notafiscal\", now at version v4 (execution time 00:00.019s)","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.270335838Z","log":{"level":"INFO","logger":"org.hibernate.orm.jpa"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"HHH008540: Processing PersistenceUnitInfo [name: default]","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.309218422Z","log":{"level":"INFO","logger":"org.hibernate.orm.core"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"HHH000001: Hibernate ORM core version 7.4.13.Final","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.611411922Z","log":{"level":"INFO","logger":"org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"No LoadTimeWeaver setup: ignoring JPA class transformer","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:34.664267713Z","log":{"level":"INFO","logger":"org.hibernate.orm.connections.pooling"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"HHH10001005: Database info:\n\tDatabase JDBC URL [jdbc:postgresql://postgres:5432/notafiscal?currentSchema=notafiscal]\n\tDatabase driver: PostgreSQL JDBC Driver\n\tDatabase dialect: PostgreSQLDialect\n\tDatabase version: 17.6\n\tDefault catalog/schema: notafiscal/notafiscal\n\tAutocommit mode: undefined/unknown\n\tIsolation level: READ_COMMITTED [default READ_COMMITTED]\n\tJDBC fetch size: none\n\tPool: DataSourceConnectionProvider\n\tMinimum pool size: undefined/unknown\n\tMaximum pool size: undefined/unknown","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:35.279648380Z","log":{"level":"INFO","logger":"org.hibernate.orm.core"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:35.283173422Z","log":{"level":"INFO","logger":"org.hibernate.orm.jdbc.batch"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"HHH100501: Automatic JDBC statement batching enabled (maximum batch size 500)","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:35.307462714Z","log":{"level":"INFO","logger":"org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Initialized JPA EntityManagerFactory for persistence unit 'default'","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:35.429137756Z","log":{"level":"INFO","logger":"org.springframework.data.jpa.repository.query.QueryEnhancerFactories"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Hibernate is in classpath; If applicable, HQL parser will be used.","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:36.960859965Z","log":{"level":"INFO","logger":"org.springframework.boot.tomcat.TomcatWebServer"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Tomcat started on port 8080 (http) with context path '/'","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:37.017972881Z","log":{"level":"INFO","logger":"org.springframework.boot.tomcat.TomcatWebServer"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Tomcat initialized with port 8081 (http)","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:37.018654256Z","log":{"level":"INFO","logger":"org.apache.catalina.core.StandardService"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Starting service [Tomcat]","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:37.018838006Z","log":{"level":"INFO","logger":"org.apache.catalina.core.StandardEngine"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Starting Servlet engine: [Apache Tomcat/11.0.27]","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:37.021520923Z","log":{"level":"INFO","logger":"org.springframework.boot.web.context.servlet.WebApplicationContextInitializer"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Root WebApplicationContext: initialization completed in 54 ms","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:37.032199548Z","log":{"level":"INFO","logger":"org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Exposing 3 endpoints beneath base path '/actuator'","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:37.053624423Z","log":{"level":"INFO","logger":"org.springframework.boot.tomcat.TomcatWebServer"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Tomcat started on port 8081 (http) with context path '/'","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:37.065350215Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.ApplicationKt"},"process":{"pid":1,"thread":{"name":"main"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Started ApplicationKt in 5.222 seconds (process running for 5.743)","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:37.103958840Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=0.0 usage_max_ms=0.0 acquisition_count=0 timeout_count=0","traceId":"33d1d3858bdb3c6ad5f0ed4dd5baec32","spanId":"a54cd882d16ce7be","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:37.105585131Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=0 idle=0 pending=0 max=0 acquire_max_ms=0.0 usage_max_ms=0.0 acquisition_count=0 timeout_count=0","traceId":"33d1d3858bdb3c6ad5f0ed4dd5baec32","spanId":"a54cd882d16ce7be","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:38.517724340Z","log":{"level":"INFO","logger":"org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]"},"process":{"pid":1,"thread":{"name":"tomcat-handler-0"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Initializing Spring DispatcherServlet 'dispatcherServletRegistration'","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:38.517968049Z","log":{"level":"INFO","logger":"org.springframework.web.servlet.DispatcherServlet"},"process":{"pid":1,"thread":{"name":"tomcat-handler-0"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Initializing Servlet 'dispatcherServletRegistration'","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:38.518475174Z","log":{"level":"INFO","logger":"org.springframework.web.servlet.DispatcherServlet"},"process":{"pid":1,"thread":{"name":"tomcat-handler-0"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Completed initialization in 0 ms","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:38.556785715Z","log":{"level":"INFO","logger":"com.zaxxer.hikari.HikariDataSource"},"process":{"pid":1,"thread":{"name":"tomcat-handler-0"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"notafiscal-api-read - Starting...","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:38.564888090Z","log":{"level":"INFO","logger":"com.zaxxer.hikari.pool.HikariPool"},"process":{"pid":1,"thread":{"name":"tomcat-handler-0"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"notafiscal-api-read - Added connection org.postgresql.jdbc.PgConnection@5ebfce8c","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:38.565391924Z","log":{"level":"INFO","logger":"com.zaxxer.hikari.HikariDataSource"},"process":{"pid":1,"thread":{"name":"tomcat-handler-0"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"notafiscal-api-read - Start completed.","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:39.110688507Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=2.663666 usage_max_ms=0.0 acquisition_count=4 timeout_count=0","traceId":"8b4085c9859fa09c270c5861471de7d8","spanId":"db853f7a224773ca","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:39.111071007Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=0 idle=13 pending=0 max=25 acquire_max_ms=0.006667 usage_max_ms=0.0 acquisition_count=2 timeout_count=0","traceId":"8b4085c9859fa09c270c5861471de7d8","spanId":"db853f7a224773ca","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:41.117508300Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=2.663666 usage_max_ms=0.0 acquisition_count=4 timeout_count=0","traceId":"0db366debae6f952dc453e7a0cefd2c5","spanId":"a0b36836a0b7efe4","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:41.119480800Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=0 idle=25 pending=0 max=25 acquire_max_ms=0.006667 usage_max_ms=0.0 acquisition_count=2 timeout_count=0","traceId":"0db366debae6f952dc453e7a0cefd2c5","spanId":"a0b36836a0b7efe4","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:43.124215926Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=2.663666 usage_max_ms=0.0 acquisition_count=4 timeout_count=0","traceId":"c5fec0708e4941551a324abb5cb0e407","spanId":"e1cb3685c27d54bb","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:43.125097968Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=0 idle=25 pending=0 max=25 acquire_max_ms=0.006667 usage_max_ms=0.0 acquisition_count=2 timeout_count=0","traceId":"c5fec0708e4941551a324abb5cb0e407","spanId":"e1cb3685c27d54bb","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:45.132107885Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=2.663666 usage_max_ms=0.0 acquisition_count=4 timeout_count=0","traceId":"b75c42225cb2a1dcdb64caf36153d4a4","spanId":"1c128723e6d57b11","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:45.133138802Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=0 idle=25 pending=0 max=25 acquire_max_ms=0.006667 usage_max_ms=0.0 acquisition_count=2 timeout_count=0","traceId":"b75c42225cb2a1dcdb64caf36153d4a4","spanId":"1c128723e6d57b11","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:47.145564178Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=2.663666 usage_max_ms=0.0 acquisition_count=4 timeout_count=0","traceId":"53ce12e35f27098b3693a1663cd96b5f","spanId":"0dbcaecd7be0be6d","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:47.151107469Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=0 idle=25 pending=0 max=25 acquire_max_ms=0.006667 usage_max_ms=0.0 acquisition_count=2 timeout_count=0","traceId":"53ce12e35f27098b3693a1663cd96b5f","spanId":"0dbcaecd7be0be6d","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:49.176697429Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=2.663666 usage_max_ms=0.0 acquisition_count=4 timeout_count=0","traceId":"4e11bbc404907a3d08156cb8aa4a105c","spanId":"f22c113ea354e71b","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:49.178229929Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=0 idle=25 pending=0 max=25 acquire_max_ms=0.006667 usage_max_ms=0.0 acquisition_count=2 timeout_count=0","traceId":"4e11bbc404907a3d08156cb8aa4a105c","spanId":"f22c113ea354e71b","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:51.199405680Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=2.663666 usage_max_ms=0.0 acquisition_count=4 timeout_count=0","traceId":"c5cbf20637d975ef3e5af7127a8b2aaa","spanId":"cae414bae845526f","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:51.200614471Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=0 idle=25 pending=0 max=25 acquire_max_ms=0.006667 usage_max_ms=0.0 acquisition_count=2 timeout_count=0","traceId":"c5cbf20637d975ef3e5af7127a8b2aaa","spanId":"cae414bae845526f","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:51.570647388Z","log":{"level":"INFO","logger":"org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]"},"process":{"pid":1,"thread":{"name":"tomcat-handler-0"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Initializing Spring DispatcherServlet 'dispatcherServlet'","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:51.572330972Z","log":{"level":"INFO","logger":"org.springframework.web.servlet.DispatcherServlet"},"process":{"pid":1,"thread":{"name":"tomcat-handler-0"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Initializing Servlet 'dispatcherServlet'","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:51.592227722Z","log":{"level":"INFO","logger":"org.springframework.web.servlet.DispatcherServlet"},"process":{"pid":1,"thread":{"name":"tomcat-handler-0"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Completed initialization in 17 ms","tags":["COMMONS-LOGGING"],"ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:53.208387083Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=2.663666 usage_max_ms=0.0 acquisition_count=4 timeout_count=0","traceId":"453bfe8bc5aaaac44d08225bc0ef9151","spanId":"c5d2aedb95fdc6bd","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:53.208796958Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=25 idle=0 pending=435 max=25 acquire_max_ms=866.9165 usage_max_ms=905.0 acquisition_count=50 timeout_count=0","traceId":"453bfe8bc5aaaac44d08225bc0ef9151","spanId":"c5d2aedb95fdc6bd","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:55.528626167Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=2.663666 usage_max_ms=0.0 acquisition_count=4 timeout_count=0","traceId":"fbab2e5bc045c67c96194ac20e0c6733","spanId":"d81025838eb89f90","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:55.529043292Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=24 idle=1 pending=3943 max=25 acquire_max_ms=2903.816625 usage_max_ms=1985.0 acquisition_count=297 timeout_count=0","traceId":"fbab2e5bc045c67c96194ac20e0c6733","spanId":"d81025838eb89f90","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:57.737810960Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=2.663666 usage_max_ms=0.0 acquisition_count=4 timeout_count=0","traceId":"4ab370bd753ef7b4a379f80f80aac745","spanId":"05cccdc6e77da5a4","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:39:57.738286043Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=25 idle=0 pending=5813 max=25 acquire_max_ms=5632.328002 usage_max_ms=1985.0 acquisition_count=1319 timeout_count=0","traceId":"4ab370bd753ef7b4a379f80f80aac745","spanId":"05cccdc6e77da5a4","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:40:02.430704587Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=2.663666 usage_max_ms=0.0 acquisition_count=4 timeout_count=0","traceId":"c45644155ec851469c9846f25b554a9c","spanId":"93491121ca748b2e","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:40:02.432140379Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=25 idle=0 pending=6640 max=25 acquire_max_ms=9568.22492 usage_max_ms=1985.0 acquisition_count=4567 timeout_count=0","traceId":"c45644155ec851469c9846f25b554a9c","spanId":"93491121ca748b2e","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:40:09.408185049Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=2.663666 usage_max_ms=0.0 acquisition_count=4 timeout_count=0","traceId":"18d454df968471dbcb17c500fe097df9","spanId":"f89129e63d17d81e","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:40:09.439611466Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=24 idle=1 pending=10157 max=25 acquire_max_ms=16026.971549 usage_max_ms=6636.0 acquisition_count=5999 timeout_count=0","traceId":"18d454df968471dbcb17c500fe097df9","spanId":"f89129e63d17d81e","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:40:13.815577968Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-write active=0 idle=25 pending=0 max=25 acquire_max_ms=2.663666 usage_max_ms=0.0 acquisition_count=4 timeout_count=0","traceId":"b334f52242198406c2e3b2f7d05529cd","spanId":"3078771f05caae8c","ecs":{"version":"8.11"}}
+{"@timestamp":"2026-11-18T02:40:13.818367384Z","log":{"level":"INFO","logger":"com.itau.desafio_diogo_bernard.config.PoolMetricsLogJob"},"process":{"pid":1,"thread":{"name":"scheduling-1"}},"service":{"name":"desafio-diogo-bernard","node":{}},"message":"Pool Hikari: role=api pool=notafiscal-api-read active=25 idle=0 pending=11169 max=25 acquire_max_ms=21032.219509 usage_max_ms=6636.0 acquisition_count=7304 timeout_count=0","traceId":"b334f52242198406c2e3b2f7d05529cd","spanId":"3078771f05caae8c","ecs":{"version":"8.11"}}
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "http-nio-8081-Poller"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "BatchSpanProcessor_WorkerThread-1"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "http-nio-8080-Poller"
+Exception in thread "tomcat-handler-19970" java.lang.NoClassDefFoundError: Could not initialize class ch.qos.logback.classic.spi.ThrowableProxy
+	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+	at org.slf4j.bridge.SLF4JBridgeHandler.callLocationAwareLogger(SLF4JBridgeHandler.java:232)
+	at org.slf4j.bridge.SLF4JBridgeHandler.publish(SLF4JBridgeHandler.java:313)
+	at java.logging/java.util.logging.Logger.log(Unknown Source)
+	at java.logging/java.util.logging.Logger.doLog(Unknown Source)
+	at java.logging/java.util.logging.Logger.logp(Unknown Source)
+	at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:170)
+	at org.apache.juli.logging.DirectJDKLog.error(DirectJDKLog.java:141)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2220)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at java.base/java.lang.VirtualThread.run(Unknown Source)
+Exception in thread "tomcat-handler-19968" java.lang.NoClassDefFoundError: Could not initialize class ch.qos.logback.classic.spi.ThrowableProxy
+	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+	at org.slf4j.bridge.SLF4JBridgeHandler.callLocationAwareLogger(SLF4JBridgeHandler.java:232)
+	at org.slf4j.bridge.SLF4JBridgeHandler.publish(SLF4JBridgeHandler.java:313)
+	at java.logging/java.util.logging.Logger.log(Unknown Source)
+	at java.logging/java.util.logging.Logger.doLog(Unknown Source)
+	at java.logging/java.util.logging.Logger.logp(Unknown Source)
+	at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:170)
+	at org.apache.juli.logging.DirectJDKLog.error(DirectJDKLog.java:141)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2220)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at java.base/java.lang.VirtualThread.run(Unknown Source)
+Exception in thread "tomcat-handler-19850" java.lang.NoClassDefFoundError: Could not initialize class ch.qos.logback.classic.spi.ThrowableProxy
+	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+	at org.slf4j.bridge.SLF4JBridgeHandler.callLocationAwareLogger(SLF4JBridgeHandler.java:232)
+	at org.slf4j.bridge.SLF4JBridgeHandler.publish(SLF4JBridgeHandler.java:313)
+	at java.logging/java.util.logging.Logger.log(Unknown Source)
+	at java.logging/java.util.logging.Logger.doLog(Unknown Source)
+	at java.logging/java.util.logging.Logger.logp(Unknown Source)
+	at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:170)
+	at org.apache.juli.logging.DirectJDKLog.error(DirectJDKLog.java:141)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2220)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at java.base/java.lang.VirtualThread.run(Unknown Source)
+Exception in thread "tomcat-handler-19967" java.lang.NoClassDefFoundError: Could not initialize class ch.qos.logback.classic.spi.ThrowableProxy
+	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+	at org.slf4j.bridge.SLF4JBridgeHandler.callLocationAwareLogger(SLF4JBridgeHandler.java:232)
+	at org.slf4j.bridge.SLF4JBridgeHandler.publish(SLF4JBridgeHandler.java:313)
+	at java.logging/java.util.logging.Logger.log(Unknown Source)
+	at java.logging/java.util.logging.Logger.doLog(Unknown Source)
+	at java.logging/java.util.logging.Logger.logp(Unknown Source)
+	at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:170)
+	at org.apache.juli.logging.DirectJDKLog.error(DirectJDKLog.java:141)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2220)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at java.base/java.lang.VirtualThread.run(Unknown Source)
+Exception in thread "tomcat-handler-19972" java.lang.NoClassDefFoundError: Could not initialize class ch.qos.logback.classic.spi.ThrowableProxy
+	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+	at org.slf4j.bridge.SLF4JBridgeHandler.callLocationAwareLogger(SLF4JBridgeHandler.java:232)
+	at org.slf4j.bridge.SLF4JBridgeHandler.publish(SLF4JBridgeHandler.java:313)
+	at java.logging/java.util.logging.Logger.log(Unknown Source)
+	at java.logging/java.util.logging.Logger.doLog(Unknown Source)
+	at java.logging/java.util.logging.Logger.logp(Unknown Source)
+	at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:170)
+	at org.apache.juli.logging.DirectJDKLog.error(DirectJDKLog.java:141)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2220)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at java.base/java.lang.VirtualThread.run(Unknown Source)
+Exception in thread "tomcat-handler-19971" java.lang.NoClassDefFoundError: Could not initialize class ch.qos.logback.classic.spi.ThrowableProxy
+	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+	at org.slf4j.bridge.SLF4JBridgeHandler.callLocationAwareLogger(SLF4JBridgeHandler.java:232)
+	at org.slf4j.bridge.SLF4JBridgeHandler.publish(SLF4JBridgeHandler.java:313)
+	at java.logging/java.util.logging.Logger.log(Unknown Source)
+	at java.logging/java.util.logging.Logger.doLog(Unknown Source)
+	at java.logging/java.util.logging.Logger.logp(Unknown Source)
+	at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:170)
+	at org.apache.juli.logging.DirectJDKLog.error(DirectJDKLog.java:141)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2220)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at java.base/java.lang.VirtualThread.run(Unknown Source)
+Exception in thread "tomcat-handler-19808" java.lang.NoClassDefFoundError: Could not initialize class ch.qos.logback.classic.spi.ThrowableProxy
+	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+	at org.slf4j.bridge.SLF4JBridgeHandler.callLocationAwareLogger(SLF4JBridgeHandler.java:232)
+	at org.slf4j.bridge.SLF4JBridgeHandler.publish(SLF4JBridgeHandler.java:313)
+	at java.logging/java.util.logging.Logger.log(Unknown Source)
+	at java.logging/java.util.logging.Logger.doLog(Unknown Source)
+	at java.logging/java.util.logging.Logger.logp(Unknown Source)
+	at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:170)
+	at org.apache.juli.logging.DirectJDKLog.error(DirectJDKLog.java:141)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2220)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at java.base/java.lang.VirtualThread.run(Unknown Source)
+Exception in thread "tomcat-handler-19975" java.lang.NoClassDefFoundError: Could not initialize class ch.qos.logback.classic.spi.ThrowableProxy
+	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+	at org.slf4j.bridge.SLF4JBridgeHandler.callLocationAwareLogger(SLF4JBridgeHandler.java:232)
+	at org.slf4j.bridge.SLF4JBridgeHandler.publish(SLF4JBridgeHandler.java:313)
+	at java.logging/java.util.logging.Logger.log(Unknown Source)
+	at java.logging/java.util.logging.Logger.doLog(Unknown Source)
+	at java.logging/java.util.logging.Logger.logp(Unknown Source)
+	at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:170)
+	at org.apache.juli.logging.DirectJDKLog.error(DirectJDKLog.java:141)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2220)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at java.base/java.lang.VirtualThread.run(Unknown Source)
+Exception in thread "tomcat-handler-19974" java.lang.NoClassDefFoundError: Could not initialize class ch.qos.logback.classic.spi.ThrowableProxy
+	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+	at org.slf4j.bridge.SLF4JBridgeHandler.callLocationAwareLogger(SLF4JBridgeHandler.java:232)
+	at org.slf4j.bridge.SLF4JBridgeHandler.publish(SLF4JBridgeHandler.java:313)
+	at java.logging/java.util.logging.Logger.log(Unknown Source)
+	at java.logging/java.util.logging.Logger.doLog(Unknown Source)
+	at java.logging/java.util.logging.Logger.logp(Unknown Source)
+	at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:170)
+	at org.apache.juli.logging.DirectJDKLog.error(DirectJDKLog.java:141)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2220)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at java.base/java.lang.VirtualThread.run(Unknown Source)
+Exception in thread "tomcat-handler-19973" java.lang.NoClassDefFoundError: Could not initialize class ch.qos.logback.classic.spi.ThrowableProxy
+	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+	at org.slf4j.bridge.SLF4JBridgeHandler.callLocationAwareLogger(SLF4JBridgeHandler.java:232)
+	at org.slf4j.bridge.SLF4JBridgeHandler.publish(SLF4JBridgeHandler.java:313)
+	at java.logging/java.util.logging.Logger.log(Unknown Source)
+	at java.logging/java.util.logging.Logger.doLog(Unknown Source)
+	at java.logging/java.util.logging.Logger.logp(Unknown Source)
+	at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:170)
+	at org.apache.juli.logging.DirectJDKLog.error(DirectJDKLog.java:141)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2220)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at java.base/java.lang.VirtualThread.run(Unknown Source)
+Exception in thread "tomcat-handler-19969" java.lang.NoClassDefFoundError: Could not initialize class ch.qos.logback.classic.spi.ThrowableProxy
+	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+	at org.slf4j.bridge.SLF4JBridgeHandler.callLocationAwareLogger(SLF4JBridgeHandler.java:232)
+	at org.slf4j.bridge.SLF4JBridgeHandler.publish(SLF4JBridgeHandler.java:313)
+	at java.logging/java.util.logging.Logger.log(Unknown Source)
+	at java.logging/java.util.logging.Logger.doLog(Unknown Source)
+	at java.logging/java.util.logging.Logger.logp(Unknown Source)
+	at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:170)
+	at org.apache.juli.logging.DirectJDKLog.error(DirectJDKLog.java:141)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2220)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at java.base/java.lang.VirtualThread.run(Unknown Source)
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "http-nio-8081-Acceptor"

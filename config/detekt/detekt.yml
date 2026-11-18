@@ -1,0 +1,4 @@
+naming:
+  PackageNaming:
+    active: true
+    packagePattern: 'com\.itau\.desafio_diogo_bernard(\.[a-z][A-Za-z0-9]*)*'

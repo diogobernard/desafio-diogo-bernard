@@ -1,0 +1,4 @@
+Heap máximo da API: 1536M (75% do limite de 2 GiB do contêiner).
+Pause Full registradas: 2558 | tempo total em Full GC: 620 s
+Primeira Full GC: uptime 36s, 1535M->1222M (cap. 1536M), 1802 ms
+A partir do uptime 40s o heap fica em ~1526M após cada coleta (nada é liberado).

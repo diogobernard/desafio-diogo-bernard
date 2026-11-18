@@ -1,0 +1,10 @@
+notafiscal.notas.v1.estoque.dlq:0:0
+notafiscal.notas.v1.estoque.dlq:1:0
+notafiscal.notas.v1.estoque.dlq:2:0
+notafiscal.notas.v1.estoque.dlq:3:0
+notafiscal.notas.v1.estoque.dlq:4:0
+notafiscal.notas.v1.estoque.dlq:5:0
+notafiscal.notas.v1.estoque.dlq:6:0
+notafiscal.notas.v1.estoque.dlq:7:0
+notafiscal.notas.v1.estoque.dlq:8:0
+notafiscal.notas.v1.estoque.dlq:9:0

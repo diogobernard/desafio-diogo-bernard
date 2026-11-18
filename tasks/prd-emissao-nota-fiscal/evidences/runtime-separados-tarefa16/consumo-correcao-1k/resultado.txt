@@ -1,0 +1,43 @@
+E2E-13 de validação das correções, volume 1k (LOAD_REQUESTS=1000), worker com 4 CPUs e Docker com 8.
+Rodada de validação, não oficial: a carga do host começou em 12,6, acima dos 8 núcleos.
+
+Resultado: aprovada. Aquecimento com 3.000 notas e 12.000/12.000 notificações. Medição: 1.000 emitidas
+em 6 s (166,67 notas/s), 4.000 notificações, nenhum par consumidor-evento ausente ou duplicado,
+numeração sem duplicidade nem lacuna, DLQs vazias e lag zero nos cinco grupos (escoado em 2 s).
+O worker não registrou retry, envio para DLQ nem parada de emergência.
+
+Diagnóstico das falhas anteriores (consumo-inicial, consumo-pausa-inicial, consumo-confirmatorio):
+
+1. Travamento na atribuição de partições (intermitente). Com spring.threads.virtual.enabled, o Boot
+   executa os consumidores da factory padrão (grupo notafiscal-api) em virtual threads. No JDK 21, o
+   cliente Kafka faz log dentro de blocos synchronized: as virtual threads esperam o lock do appender
+   de console presas ao carrier (VirtualThread.parkOnCarrierThread). Com os carriers ocupados, a
+   próxima da fila do lock não é montada, e os 38 consumidores de plataforma dos quatro grupos de
+   notificação ficam parados atrás dela. Confirmado por thread dump (SIGQUIT) e pelo dump de virtual
+   threads via jcmd. Correção: KafkaListenerThreadsConfig devolve os consumidores Kafka a threads de
+   plataforma; API e jobs continuam em virtual threads.
+
+2. Notificações perdidas no aquecimento (761 a 8.446 de 12.000). Cada container buscava até 500
+   registros (max.poll.records padrão), acima do limite de 200 em voo do simulador, que rejeita o
+   excedente. Na rodada instrumentada, 3.655 registros falharam uma única vez (tentativa=1), sem
+   retry nem DLQ; 12.000 - 8.359 = 3.641. O log só registra o tipo ListenerExecutionFailedException;
+   a origem no limite do simulador é inferida porque, com o lote limitado, nenhuma falha ocorreu.
+   A factory não repassa kafkaConsumerProperties aos
+   containers, então o limite agora é aplicado por ContainerCustomizer: max.poll.records =
+   max-em-voo / concorrência (20 no perfil de carga, 1 no Compose de referência).
+
+3. Corrida no simulador: futuro.complete() confirmava o offset na mesma thread antes do release do
+   semáforo, e o container podia buscar o próximo lote com permissões ainda presas. A permissão
+   agora é liberada antes de concluir o futuro.
+
+4. Falhas em lote (corrigido depois desta rodada): com setSeekAfterError(false) e listener assíncrono, quando
+   vários registros do mesmo lote falham, o spring-kafka 4.1.2 só reprocessa o último
+   (remainingRecords é sobrescrito em invokeErrorHandlerBySingleRecord), e os demais ficavam sem retry
+   nem DLQ. Reproduzido pelo TI-30 (0 de 40 na DLQ). O retry e a DLQ passaram para o consumidor
+   (ReceberNotificacaoComRetentativas). A carga usa taxa-falha 0, então esta rodada não exercitou o caso.
+
+Revalidação depois da correção 4 (retry e DLQ no consumidor), também em 1k e não oficial: aprovada.
+Aquecimento com 12.000/12.000 notificações; medição com 1.000 emitidas em 7 s (142,86 notas/s),
+4.000 notificações, nenhum par ausente ou duplicado, numeração íntegra, DLQs vazias, lag zero em 2 s
+e nenhum retry no worker. Uma tentativa anterior foi interrompida antes do consumo: com a carga do
+host em 16,6, 3 dos 3.000 POST de aquecimento falharam por conexão recusada na API.

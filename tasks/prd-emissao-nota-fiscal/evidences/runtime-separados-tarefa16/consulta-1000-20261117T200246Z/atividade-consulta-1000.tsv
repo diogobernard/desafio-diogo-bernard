@@ -1,0 +1,8 @@
+2026-11-17T20:02:35Z	25|0|0|0|1|0|0	notafiscal-consulta-66523-postgres-replica-1|0.02%|64.65MiB / 1GiB|6.31%
+notafiscal-consulta-66523-api-1|1.80%|629.7MiB / 2GiB|30.75%
+notafiscal-consulta-66523-postgres-1|0.07%|151.2MiB / 1GiB|14.77%
+notafiscal-consulta-66523-kafka-1|154.41%|1006MiB / 1GiB|98.27%
+2026-11-17T20:02:39Z	25|0|0|0|1|0|0	notafiscal-consulta-66523-postgres-replica-1|38.09%|75.97MiB / 1GiB|7.42%
+notafiscal-consulta-66523-api-1|431.59%|655.8MiB / 2GiB|32.02%
+notafiscal-consulta-66523-postgres-1|0.02%|152.1MiB / 1GiB|14.86%
+notafiscal-consulta-66523-kafka-1|117.13%|1007MiB / 1GiB|98.30%

@@ -1,0 +1,3 @@
+carga_host_inicio=22.06
+carga_host_fim=20.62
+carga_host_pico=22.06

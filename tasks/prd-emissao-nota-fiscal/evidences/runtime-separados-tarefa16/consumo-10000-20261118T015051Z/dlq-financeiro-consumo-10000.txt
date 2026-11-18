@@ -1,0 +1,10 @@
+notafiscal.notas.v1.financeiro.dlq:0:0
+notafiscal.notas.v1.financeiro.dlq:1:0
+notafiscal.notas.v1.financeiro.dlq:2:0
+notafiscal.notas.v1.financeiro.dlq:3:0
+notafiscal.notas.v1.financeiro.dlq:4:0
+notafiscal.notas.v1.financeiro.dlq:5:0
+notafiscal.notas.v1.financeiro.dlq:6:0
+notafiscal.notas.v1.financeiro.dlq:7:0
+notafiscal.notas.v1.financeiro.dlq:8:0
+notafiscal.notas.v1.financeiro.dlq:9:0

@@ -1,0 +1,8 @@
+2026-11-17T22:53:35Z	25|0|0|0|1|0|0	notafiscal-consulta-88824-postgres-replica-1|0.04%|86.88MiB / 1GiB|8.48%
+notafiscal-consulta-88824-api-1|1.52%|1.211GiB / 2GiB|60.54%
+notafiscal-consulta-88824-postgres-1|6.84%|102.2MiB / 1GiB|9.98%
+notafiscal-consulta-88824-kafka-1|78.42%|449.9MiB / 1GiB|43.94%
+2026-11-17T22:53:39Z	25|0|0|0|1|0|0	notafiscal-consulta-88824-postgres-replica-1|29.70%|87.43MiB / 1GiB|8.54%
+notafiscal-consulta-88824-api-1|0.37%|1.322GiB / 2GiB|66.11%
+notafiscal-consulta-88824-postgres-1|6.46%|102.5MiB / 1GiB|10.01%
+notafiscal-consulta-88824-kafka-1|83.45%|442.9MiB / 1GiB|43.25%

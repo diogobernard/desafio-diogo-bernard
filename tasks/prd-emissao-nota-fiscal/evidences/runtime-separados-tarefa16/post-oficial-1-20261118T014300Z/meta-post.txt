@@ -1,0 +1,3 @@
+latencia_maxima_post_ms=3000
+conexoes_compartilhadas=false
+aquecimento_post=3000

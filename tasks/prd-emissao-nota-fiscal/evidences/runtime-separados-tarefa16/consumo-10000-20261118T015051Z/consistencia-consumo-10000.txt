@@ -1,0 +1,14 @@
+            verificacao             | valor 
+------------------------------------+-------
+ solicitacoes                       | 10000
+ emitidas                           | 10000
+ eventos_nota                       | 10000
+ eventos_repetidos                  | 0
+ notificacoes                       | 40000
+ pares_consumidor_evento_ausentes   | 0
+ pares_consumidor_evento_duplicados | 0
+ consumidores_ausentes              | 0
+ duplicidades_numeracao             | 0
+ lacunas_numeracao                  | 0
+(10 rows)
+

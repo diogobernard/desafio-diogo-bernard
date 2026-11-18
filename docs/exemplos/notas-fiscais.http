@@ -1,0 +1,19 @@
+### Consultar nota emitida (troque pelo links.invoice da solicitação EMITIDA)
+GET http://localhost:8080/invoices/1?series=1
+X-Client-Id: cliente-local
+
+### Nota sem alteração (304, troque pelo valor do header ETag da consulta anterior)
+GET http://localhost:8080/invoices/1?series=1
+X-Client-Id: cliente-local
+If-None-Match: "1-1"
+
+### Nota de outro cliente (404)
+GET http://localhost:8080/invoices/1?series=1
+X-Client-Id: outro-cliente
+
+### Nota inexistente (404 Problem Details)
+GET http://localhost:8080/invoices/999999?series=1
+X-Client-Id: cliente-local
+
+### Sem X-Client-Id (401)
+GET http://localhost:8080/invoices/1?series=1
