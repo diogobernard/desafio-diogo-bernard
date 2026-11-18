@@ -896,17 +896,20 @@ fluxo completo e os fallbacks de leitura.
 | `consulta` | `./gradlew :app:loadTest -PloadScenario=consulta` | Só os dois GETs. Sobem apenas o PostgreSQL e a API; o banco é alimentado uma vez, antes das consultas, com 5.000 solicitações emitidas e as 5.000 notas (`scripts/seed-consulta.sql`, `LOAD_CONSULTA_NOTAS`) | Réplica, worker, Kafka e `POST` (nada disso sobe) | 1k, 5k e 10k usuários sobre a mesma base, após aquecer a JVM com uma rampa de 30 s (de 10 a 1.000 usuários/s) e 10 s em patamar (`LOAD_CONSULTA_AQUECIMENTO=0` desliga) | 100% `200` e zero `404` falso |
 | `combinado` | `./gradlew :app:loadTest -PloadScenario=combinado` | `POST` com `GET` imediato, emissão e notificações juntos | — | Só 1k, API e worker com 4 CPUs e réplica, após aquecer com 3.000 solicitações do próprio cenário e esperar o escoamento delas (`LOAD_COMBINADO_AQUECIMENTO`; `0` desliga) | Zero KO e zero `404` falso |
 
-### Resultados mais recentes (18/11/2026)
+### Resultados
 
-Os quatro cenários passaram com o perfil de carga local em 18/11/2026. `POST`, consumo
-e combinado rodaram entre 01:38 e 01:58 UTC (22:38–22:58 no horário local, UTC−3). A
-consulta é o **novo teste só de GET**, medido às 03:29–03:31 UTC: só o PostgreSQL e a API,
-com o banco alimentado uma vez antes das consultas e a JVM aquecida antes do 1k. A versão
-anterior do cenário, que montava a base por `POST`, worker e Kafka, e as execuções
-intermediárias do teste novo estão no [relatório de carga](docs/carga/relatorio.md). O pico
+Os quatro cenários passaram com o perfil de carga local. `POST`, consumo e combinado
+foram executados conforme a configuração descrita acima. A consulta é o **teste só de GET**:
+só o PostgreSQL e a API, com o banco alimentado uma vez antes das consultas e a JVM
+aquecida antes do 1k. As execuções anteriores estão no [relatório de carga](docs/carga/relatorio.md). O pico
 da carga do host passou de 8 em todas as rajadas de `POST`, consumo e combinado (chegou a
 23,79) e ficou entre 5,37 e 7,00 na consulta. Os percentis são descritivos. Latências em milissegundos; a vazão é a média do Gatling na janela de
 medição.
+
+No gráfico, `2.000 GET/s` significa dois mil GETs por segundo, não dois segundos. Na
+consulta, cada usuário faz dois GETs; por isso, 10.000 usuários geram 20.000 GETs. A
+vazão de 2.000 GET/s descreve quantos o Gatling concluiu por segundo. O tempo de resposta
+está na tabela de latências abaixo, em milissegundos.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/carga/imagens/vazao-escuro.svg">
