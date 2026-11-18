@@ -1,3 +1,0 @@
-motivo=recente total=0
-motivo=negado total=0
-motivo=ultimo_numero total=0

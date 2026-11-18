@@ -1,6 +1,0 @@
-preparacao=sql_uma_vez
-notas=5000
-replica=nao_iniciada
-kafka=nao_iniciado
-worker=nao_iniciado
-post=nenhum

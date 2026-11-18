@@ -1,8 +1,0 @@
-2026-11-17T22:11:35Z	55|1|6|6|1|1000|1000	notafiscal-consumo-80151-api-1|1.69%|797.3MiB / 2GiB|38.93%
-notafiscal-consumo-80151-worker-1|200.20%|711.7MiB / 2GiB|34.75%
-notafiscal-consumo-80151-postgres-1|70.94%|130.6MiB / 1GiB|12.76%
-notafiscal-consumo-80151-kafka-1|190.23%|996.2MiB / 1GiB|97.28%
-2026-11-17T22:11:39Z	56|0|203|0|2|0|0	notafiscal-consumo-80151-api-1|1.08%|797.6MiB / 2GiB|38.94%
-notafiscal-consumo-80151-worker-1|8.03%|715.8MiB / 2GiB|34.95%
-notafiscal-consumo-80151-postgres-1|56.89%|131.4MiB / 1GiB|12.83%
-notafiscal-consumo-80151-kafka-1|93.37%|457.2MiB / 1GiB|44.65%

@@ -1,1 +1,0 @@
-aquecimento_consulta=3000

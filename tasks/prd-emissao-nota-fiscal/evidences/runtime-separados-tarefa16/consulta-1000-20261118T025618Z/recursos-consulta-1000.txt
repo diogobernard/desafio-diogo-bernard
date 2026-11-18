@@ -1,4 +1,0 @@
-CONTAINER ID   NAME                                           CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O        PIDS
-77a5e9fea4f5   notafiscal-consulta-12030-postgres-replica-1   0.06%     75.94MiB / 1GiB     7.42%     62.8MB / 31.4MB   549kB / 75.2MB   30
-7d480b762ac7   notafiscal-consulta-12030-api-1                2.49%     878.3MiB / 2GiB     42.89%    55.4MB / 70.1MB   191MB / 49.2kB   50
-e497ffcd2524   notafiscal-consulta-12030-postgres-1           7.89%     117.7MiB / 1GiB     11.49%    109kB / 38.8MB    49.9MB / 104MB   32

@@ -1,5 +1,0 @@
-CONTAINER ID   NAME                                  CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
-03a1b8fd8bdf   notafiscal-consumo-80151-api-1        1.68%     797.6MiB / 2GiB     38.94%    4.08MB / 7.47MB   483kB / 49.2kB    49
-53c1ea499f8d   notafiscal-consumo-80151-worker-1     65.97%    731.7MiB / 2GiB     35.73%    36.7MB / 28.5MB   815kB / 53.2kB    256
-a9363a3dcd1a   notafiscal-consumo-80151-postgres-1   2.23%     148.3MiB / 1GiB     14.48%    22.7MB / 18.2MB   2.65MB / 313MB    71
-dc3980c5e7a8   notafiscal-consumo-80151-kafka-1      22.33%    455.9MiB / 1GiB     44.52%    8.81MB / 18.7MB   50.2MB / 2.35MB   101

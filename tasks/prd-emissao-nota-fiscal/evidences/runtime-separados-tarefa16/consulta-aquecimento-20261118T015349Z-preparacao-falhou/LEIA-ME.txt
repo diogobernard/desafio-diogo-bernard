@@ -1,5 +1,0 @@
-Cenário consulta, aquecimento da leitura (18/11/2026, 01:53 UTC; 22:53 no horário local, UTC-3).
-Configuração: API com 4 CPUs e réplica ativa, perfil de carga padrão, worker ativo durante a preparação.
-Resultado: dos 3.000 POST que criam a base de aquecimento (cliente consulta-aquecimento), 24 falharam com SocketException: Connection reset by peer (connect failed). O Gatling registrou 2.976 OK e 24 KO (0,8%), p50 de 3.614 ms e máximo de 4.391 ms, e reprovou a asserção de 100% de sucesso (99,2%).
-Consequência: o script abortou com código 1 antes do aquecimento de GETs e das rajadas de 1k, 5k e 10k. Não há percentis de consulta nesta rodada.
-Arquivos: gatling/ (relatório da preparação) e log-cenario-consulta.txt (saída do cenário a partir do aquecimento). Os logs dos contêineres não foram preservados: o Compose isolado é removido ao final da execução.

@@ -1,8 +1,0 @@
-ingresso_capacidade=10000
-ingresso_espera_maxima=50s
-tomcat_max_connections=12000
-ingresso_escritores=2
-ingresso_lote_maximo=100
-tomcat_accept_count=4096
-consumidor_concorrencia=10
-consumidor_max_em_voo=200

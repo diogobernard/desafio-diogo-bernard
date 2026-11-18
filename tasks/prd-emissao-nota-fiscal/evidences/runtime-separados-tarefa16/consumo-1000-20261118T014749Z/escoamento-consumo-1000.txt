@@ -1,1 +1,0 @@
-escoado=sim tempo_s=1 prazo_s=300

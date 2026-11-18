@@ -1,2 +1,0 @@
-antes time_wait=962 limite=1000 espera_s=24
-depois time_wait=5014

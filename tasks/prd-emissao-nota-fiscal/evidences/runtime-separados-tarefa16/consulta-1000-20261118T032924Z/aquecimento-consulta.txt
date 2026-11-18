@@ -1,3 +1,0 @@
-aquecimento=1
-aquecimento_rampa_s=30
-aquecimento_patamar_s=10

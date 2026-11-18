@@ -1,5 +1,0 @@
-CONTAINER ID   NAME                                          CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
-6b8dfee17c6b   notafiscal-consulta-6968-postgres-replica-1   7.13%     89.86MiB / 1GiB     8.77%     64.8MB / 8.77MB   557kB / 174MB     30
-b8df619a7eb5   notafiscal-consulta-6968-api-1                0.48%     1.193GiB / 2GiB     59.65%    12.6MB / 18.2MB   77.7MB / 94.2kB   51
-d6a275cbfe35   notafiscal-consulta-6968-postgres-1           26.25%    167.6MiB / 1GiB     16.37%    21.7MB / 75.6MB   87.2MB / 254MB    32
-42e28ef62518   notafiscal-consulta-6968-kafka-1              1.42%     506.5MiB / 1GiB     49.46%    9.02MB / 18.8MB   269MB / 13.8MB    101

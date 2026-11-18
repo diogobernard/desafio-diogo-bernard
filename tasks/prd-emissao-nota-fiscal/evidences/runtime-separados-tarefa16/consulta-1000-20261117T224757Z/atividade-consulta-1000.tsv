@@ -1,8 +1,0 @@
-2026-11-17T22:47:46Z	25|0|0|0|1|0|0	notafiscal-consulta-87598-postgres-replica-1|0.02%|87.07MiB / 1GiB|8.50%
-notafiscal-consulta-87598-api-1|1.87%|1.225GiB / 2GiB|61.25%
-notafiscal-consulta-87598-postgres-1|0.04%|102.9MiB / 1GiB|10.05%
-notafiscal-consulta-87598-kafka-1|170.47%|614.3MiB / 1GiB|59.99%
-2026-11-17T22:47:49Z	25|0|0|0|1|0|0	notafiscal-consulta-87598-postgres-replica-1|0.01%|87.3MiB / 1GiB|8.53%
-notafiscal-consulta-87598-api-1|18.32%|1.296GiB / 2GiB|64.82%
-notafiscal-consulta-87598-postgres-1|21.06%|102.5MiB / 1GiB|10.01%
-notafiscal-consulta-87598-kafka-1|144.16%|615.1MiB / 1GiB|60.07%

@@ -1,2 +1,0 @@
-antes ListenOverflows=0 ListenDrops=0 
-depois ListenOverflows=0 ListenDrops=0 

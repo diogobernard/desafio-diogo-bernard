@@ -1,8 +1,0 @@
-2026-11-17T22:41:15Z	25|0|0|0|1|0|0	notafiscal-consulta-85909-postgres-replica-1|0.03%|62.18MiB / 1GiB|6.07%
-notafiscal-consulta-85909-api-1|1.82%|1.152GiB / 2GiB|57.62%
-notafiscal-consulta-85909-postgres-1|0.03%|168MiB / 1GiB|16.40%
-notafiscal-consulta-85909-kafka-1|87.79%|526.1MiB / 1GiB|51.37%
-2026-11-17T22:41:19Z	25|0|0|0|1|0|0	notafiscal-consulta-85909-postgres-replica-1|0.02%|63.01MiB / 1GiB|6.15%
-notafiscal-consulta-85909-api-1|0.40%|1.251GiB / 2GiB|62.54%
-notafiscal-consulta-85909-postgres-1|0.03%|168.1MiB / 1GiB|16.41%
-notafiscal-consulta-85909-kafka-1|145.80%|592.6MiB / 1GiB|57.87%

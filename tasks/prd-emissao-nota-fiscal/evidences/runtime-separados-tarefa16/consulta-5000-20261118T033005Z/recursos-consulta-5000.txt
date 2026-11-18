@@ -1,3 +1,0 @@
-CONTAINER ID   NAME                                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
-8c146fc8aa26   notafiscal-consulta-16676-api-1        2.24%     792.5MiB / 2GiB     38.70%    64.5MB / 83.9MB   196MB / 81.9kB    49
-6fbde9971737   notafiscal-consulta-16676-postgres-1   0.23%     162MiB / 1GiB       15.82%    28.7MB / 36.6MB   49.9MB / 83.2MB   56

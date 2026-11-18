@@ -1,5 +1,0 @@
-solicitacoes|1000
-chaves_duplicadas|0
-eventos_solicitacao|1000
-solicitacoes_sem_evento|0
-eventos_repetidos|0

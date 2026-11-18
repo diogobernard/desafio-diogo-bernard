@@ -1,6 +1,0 @@
-jfr=0
-cpus_api_experimento=padrao
-cpus_instancia=4
-memoria_api=padrao
-opcoes_jvm_api=padrao
-aquecimento_requisicoes=3

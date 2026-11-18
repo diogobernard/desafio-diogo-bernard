@@ -1,5 +1,0 @@
-solicitacoes=1000
-eventos_outbox=1000
-pausa_worker_s=5
-session_timeout_s=45
-worker_pausado_antes_medicao=sim
