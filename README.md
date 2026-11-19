@@ -53,8 +53,8 @@ isso, o projeto foi implementado do zero, com estas premissas:
 - **Autenticação fora da aplicação.** O API Gateway autentica o cliente e injeta
   `X-Client-Id`; a aplicação usa esse header para isolar os dados por cliente.
 
-Os requisitos completos estão no [PRD](tasks/prd-emissao-nota-fiscal/prd.md) e na
-[TechSpec](tasks/prd-emissao-nota-fiscal/techspec.md).
+Os requisitos completos estão no [PRD](docs/prd.md) e na
+[TechSpec](docs/techspec.md).
 
 <a id="modos-de-tributacao"></a>
 
@@ -339,8 +339,9 @@ Para gerar o guia localmente, execute na raiz do projeto com o JDK 21.
 A tarefa usa a suíte de testes do `app` para gerar os exemplos e o Asciidoctor para
 montar o HTML. O guia é gerado sem subir a API ou o Docker.
 
-[Abrir a documentação da API no navegador](app/build/docs/asciidoc/index.html) ·
-[Fonte do guia](app/src/docs/asciidoc/index.adoc)
+Abrir a documentação da API no navegador: `app/build/docs/asciidoc/index.html`
+
+Fonte do guia: `app/src/docs/asciidoc/index.adoc`
 
 ## Subir a aplicação completa
 
